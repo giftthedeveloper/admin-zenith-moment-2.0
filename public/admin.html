@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+
+    .overflow-x-auto {
+      overflow-x: auto;
+    }
+
+  </style>
+</head>
+<body class="bg-gray-100">
+  <div class="flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-3xl">
+      <h1 class="text-2xl font-semibold mb-4">Welcome to the Admin Dashboard</h1>
+      <div class="overflow-x-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="py-2 px-4">#</th>
+              <th class="py-2 px-4">Name</th>
+              <th class="py-2 px-4">Email</th>
+              <th class="py-2 px-4">Phone Number</th>
+              <!-- Add more columns as needed -->
+            </tr>
+          </thead>
+          <tbody id="userTableBody">
+            <!-- User data will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>

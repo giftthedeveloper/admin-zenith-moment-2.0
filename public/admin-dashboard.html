@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="flex justify-center items-center h-screen">
+    <div class="bg-white p-8 rounded shadow-md w-full max-w-3xl">
+      <h1 class="text-2xl font-semibold mb-4">Welcome to the Admin Dashboard</h1>
+      <div class="table-content overflow-y-auto">
+        <table class="w-full border-collapse border border-gray-300">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="py-2 px-4">Name</th>
+              <th class="py-2 px-4">Phone Number</th>
+              <th class="py-2 px-4">Email</th>
+              <th class="py-2 px-4">Gender</th>
+              <th class="py-2 px-4">Pickup Point</th>
+              <th class="py-2 px-4">Arrival Date</th>
+              <th class="py-2 px-4">Department</th>
+              <th class="py-2 px-4">Referral Code</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody">
+            <!-- User data will be dynamically added here -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <button id="downloadPDF" class="btn btn-primary mt-3">Download PDF</button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <script src="admin-dashboard.js"></script>
+</body>
+</html>
