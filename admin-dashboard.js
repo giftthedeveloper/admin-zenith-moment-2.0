@@ -31,16 +31,5 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Error fetching user data:', error);
     });
 
-    generatePDFButton.addEventListener('click', () => {
-      const users = Array.from(userTableBody.querySelectorAll('tr')).map(row => {
-        const cells = row.querySelectorAll('td');
-        return {
-          fullName: cells[1].textContent,
-          email: cells[2].textContent,
-          // Add more properties as needed
-        };
-      });
-  
-      generatePDF(users);
-    });
+   
 });
