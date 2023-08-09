@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const userTableBody = document.getElementById('userTableBody');
 
   // Fetch user data from the API and populate the table
-  fetch('http://127.0.0.1:3000/users/users')
+  fetch('https://api-zenithmoment.onrender.com/users/users')
     .then(response => response.json())
     .then(data => {
       data.forEach((user, index) => {
