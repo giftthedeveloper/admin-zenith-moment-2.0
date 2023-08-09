@@ -3,10 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Admin Dashboard for managing user data">
+  <meta name="keywords" content="admin, dashboard, user management">
+  <meta name="author" content="Your Name">
   <title>Admin Dashboard</title>
+  
+  <!-- Include Tailwind CSS -->
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-gray-100">
   <div class="flex justify-center items-center h-screen">
     <div class="bg-white p-8 rounded shadow-md w-full max-w-3xl">
       <h1 class="text-2xl font-semibold mb-4">Welcome to the Admin Dashboard</h1>
@@ -14,27 +19,34 @@
         <table class="w-full border-collapse border border-gray-300">
           <thead>
             <tr class="bg-gray-100">
-              <th class="py-2 px-4">Name</th>
-              <th class="py-2 px-4">Phone Number</th>
-              <th class="py-2 px-4">Email</th>
-              <th class="py-2 px-4">Gender</th>
-              <th class="py-2 px-4">Pickup Point</th>
-              <th class="py-2 px-4">Arrival Date</th>
-              <th class="py-2 px-4">Department</th>
-              <th class="py-2 px-4">Referral Code</th>
+              <th class="border p-2">S/N</th>
+              <th class="border p-2">Name</th>
+              <th class="border p-2">Email</th>
+              <th class="border p-2">Phone Number</th>
+              <th class="border p-2">Gender</th>
+              <th class="border p-2">Pickup Point</th>
+              <th class="border p-2">Arrival Date</th>
+              <th class="border p-2">Department</th>
+              <th class="border p-2">Referral Code</th>
+              <th class="border p-2">Expectations</th>
+
             </tr>
+
           </thead>
           <tbody id="userTableBody">
             <!-- User data will be dynamically added here -->
           </tbody>
         </table>
+        <span>You can directly copy this table and paste in an excel sheet</span>
+        <!-- <button id="generatePDFButton" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-3">Generate PDF</button> -->
       </div>
     </div>
   </div>
-  <button id="downloadPDF" class="btn btn-primary mt-3">Download PDF</button>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.0/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
-  <script src="admin-dashboard.js"></script>
+  <!-- Include your scripts here -->
+  <script type="module" src="./pdf-generator.js"></script>
+  <!-- Include the fetch-users.js script -->
+  <!-- Include the admin-dashboard.js script -->
+  <script type="module" src="./admin-dashboard.js"></script>
 </body>
 </html>
