@@ -17,7 +17,7 @@ app.get('/testimonies', (req, res) => {
 // });
 
 app.get('/feedback', (req, res) => {
-    res.sendFile(__dirname + '/feedbackform.html');
+    res.sendFile(__dirname + '/feedback.html');
 });
 
 app.listen(port, () => {
