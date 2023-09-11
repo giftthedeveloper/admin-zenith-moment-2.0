@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
     // Fetch user data from the API and populate the table
     // fetch('https://api-zenithmoment.onrender.com/testimony/')
-    fetch('http://127.0.0.1:3000/feedback/')
+    fetch('https://api-zenithmoment.onrender.com/feedback/')
       .then(response => response.json())
       .then(data => {
         data.forEach((feedback, index) => {
